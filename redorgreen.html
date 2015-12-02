@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+	$("#red").click(function(){
+		alert("Wrong.  You clicked red. The correct button was green.")
+	});
+	$("#green").click(function(){
+		alert("Wrong.  You clicked green. The correct button was red.")
+	});
+});
+</script>
+</head>
+
+<body>
+<h1>Click red or click green?</h1>
+<button id="red">Click red?</button>
+<button id="green">Click green?</button>
+<style>
+button{
+	width:250px;
+	height:100px;
+}
+#red{
+	background-color:#FF0000;
+}
+#green{
+	background-color:#00FF00;
+}
+</style>
+</body>
+</html>
